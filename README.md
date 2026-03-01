@@ -7,7 +7,7 @@
 ## 使用
 
 ```go
-import _ "github.com/bamgoo/search-opensearch"
+import _ "github.com/infrago/search-opensearch"
 ```
 
 ```toml

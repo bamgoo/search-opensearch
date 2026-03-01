@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bamgoo/bamgoo"
-	. "github.com/bamgoo/base"
-	"github.com/bamgoo/search"
+	"github.com/infrago/infra"
+	. "github.com/infrago/base"
+	"github.com/infrago/search"
 )
 
 type openSearchDriver struct{}
@@ -27,7 +27,7 @@ type openSearchConnection struct {
 }
 
 func init() {
-	bamgoo.Register("opensearch", &openSearchDriver{})
+	infra.Register("opensearch", &openSearchDriver{})
 }
 
 func (d *openSearchDriver) Connect(inst *search.Instance) (search.Connection, error) {
